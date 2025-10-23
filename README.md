@@ -1,4 +1,4 @@
-# GamesStorage
+# Games Storage
 Пет проект для изучения React и JS  
 
 
