@@ -1,7 +1,14 @@
 /** @type {import('stylelint').Config} */
-export default {
-    extends: ["stylelint-config-standard"],
+const config = {
+    extends: ['stylelint-config-standard'],
     rules: {
-        'number-leading-zero': 'always',
-    }
+        "at-rule-no-deprecated": [
+            true,
+            {
+                ignoreAtRules: ["apply"],
+            },
+        ],
+    },
 };
+
+export default config;
