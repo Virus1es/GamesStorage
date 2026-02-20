@@ -31,7 +31,7 @@ export default function GameCarousel() {
         <div className="slider-container max-w-4xl mx-auto">
             <Slider {...settings}>
                 {images.map((item) => (
-                    <div key={item.title} className="grid grid-cols-2">
+                    <div key={item.title} className="flex flex-col">
                         <Image
                             src={'/games/' + item.src}
                             alt={item.title}
