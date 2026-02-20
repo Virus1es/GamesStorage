@@ -43,9 +43,9 @@ export default function GamesByGenre({ genreName }: string) {
                             <Image
                                 src={'/games/' + item.src}
                                 alt={item.title}
-                                width={800}
-                                height={800}
-                                className="w-full"
+                                width={200}
+                                height={200}
+                                className="w-fit"
                             />
                             <p
                                 className={`text-center mt-3 text-3xl ${merriweather.variable}`}
