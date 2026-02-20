@@ -10,17 +10,18 @@ const merriweather = Merriweather({
     subsets: ['latin'],
 });
 
-export default function GamesByGenre({ genreName }: string) {
+export default function GamesByGenre({ genreName }: { genreName: string }) {
     const images = [
         { src: 'cyberpunk.jpg', title: 'Cyberpunk 2077' },
         { src: 'darkSouls.jpg', title: 'Dark Souls 3' },
         { src: 'witcher.jpeg', title: 'The Witcher 3: Wild Hunt' },
+        { src: 'warthunder.jpg', title: 'War Thunder' },
+        { src: 'BrokenArrow.jpg', title: 'Broken Arrow' },
         { src: 'cyberpunk.jpg', title: 'Cyberpunk 2077' },
         { src: 'darkSouls.jpg', title: 'Dark Souls 3' },
         { src: 'witcher.jpeg', title: 'The Witcher 3: Wild Hunt' },
-        { src: 'cyberpunk.jpg', title: 'Cyberpunk 2077' },
-        { src: 'darkSouls.jpg', title: 'Dark Souls 3' },
-        { src: 'witcher.jpeg', title: 'The Witcher 3: Wild Hunt' },
+        { src: 'warthunder.jpg', title: 'War Thunder' },
+        { src: 'BrokenArrow.jpg', title: 'Broken Arrow' },
     ];
 
     const settings = {

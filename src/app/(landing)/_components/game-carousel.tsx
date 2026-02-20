@@ -15,6 +15,8 @@ export default function GameCarousel() {
         { src: 'cyberpunk.jpg', title: 'Cyberpunk 2077' },
         { src: 'darkSouls.jpg', title: 'Dark Souls 3' },
         { src: 'witcher.jpeg', title: 'The Witcher 3: Wild Hunt' },
+        { src: 'warthunder.jpg', title: 'War Thunder' },
+        { src: 'BrokenArrow.jpg', title: 'Broken Arrow' },
     ];
 
     const settings = {
@@ -28,19 +30,22 @@ export default function GameCarousel() {
     };
 
     return (
-        <div className="slider-container max-w-4xl mx-auto">
+        <div className="slider-container mx-auto h-[500px]">
             <Slider {...settings}>
                 {images.map((item) => (
-                    <div key={item.title} className="flex flex-col">
+                    <div
+                        key={item.title}
+                        className="flex flex-col justify-items-center"
+                    >
                         <Image
                             src={'/games/' + item.src}
                             alt={item.title}
                             width={800}
-                            height={800}
-                            className="w-full"
+                            height={700}
+                            className="w-auto h-auto"
                         />
                         <p
-                            className={`text-center mt-3 text-3xl ${merriweather.variable}`}
+                            className={`text-center mt-3 text-xl md:text-3xl ${merriweather.variable}`}
                         >
                             {item.title}
                         </p>
