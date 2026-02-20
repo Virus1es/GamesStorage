@@ -1,5 +1,6 @@
-import Navbar from '@/app/_components/navbar';
-import GameCarousel from '@/app/_components/game-carousel';
+import Navbar from '@/components/navbar';
+import GameCarousel from '@/app/(landing)/_components/game-carousel';
+import GamesByGenre from '@/app/(landing)/_components/games-by-genre';
 
 export default function Home() {
     return (
@@ -7,6 +8,7 @@ export default function Home() {
             <Navbar />
             <main className="min-h-screen max-w-screen py-32 px-16 bg-white dark:bg-black sm:items-start">
                 <GameCarousel />
+                <GamesByGenre genreName={'Экшен'} />
                 {/* <StoreGrid />*/}
             </main>
         </div>
