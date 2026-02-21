@@ -30,7 +30,7 @@ export default function GameCarousel() {
     };
 
     return (
-        <div className="slider-container mx-auto h-[500px]">
+        <div className="slider-container mx-auto">
             <Slider {...settings}>
                 {images.map((item) => (
                     <div
@@ -42,7 +42,7 @@ export default function GameCarousel() {
                             alt={item.title}
                             width={800}
                             height={700}
-                            className="w-auto h-auto"
+                            className="w-fit"
                         />
                         <p
                             className={`text-center mt-3 text-xl md:text-3xl ${merriweather.variable}`}

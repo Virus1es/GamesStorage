@@ -8,7 +8,7 @@ export default function Home() {
             <Navbar />
             <main className="min-h-screen max-w-screen py-32 px-16 bg-white dark:bg-black sm:items-start">
                 <GameCarousel />
-                <hr className="my-4" />
+                <hr className="my-6" />
                 <GamesByGenre genreName={'Экшен'} />
                 <GamesByGenre genreName={'РПГ'} />
                 <GamesByGenre genreName={'Хоррор'} />
